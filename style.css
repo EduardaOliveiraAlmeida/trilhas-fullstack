@@ -1,3 +1,15 @@
+:root {
+    --cerise-color: #DB1E8C;
+
+    --carnation-color: #FF97D3;
+
+    --pickled-bluewood-color: #33475B;
+
+    --white-color: #FFFFFF;
+
+    --cornflower-color: #264FEC;
+}
+
 /* Importação de fonte via Google Fonts --------- */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 
@@ -6,18 +18,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    line-height: 1.5rem;
+    
 }
 
 /* Body --------- */
 body {
-    background-color: #33475B;
+
+    background-color: var(--pickled-bluewood-color);
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
 /* Header --------- */
 header {
     height: 80px;
-    background-color: #FFFFFF;
+    background-color: var(--white-color);
     display: flex;
 }
 
@@ -31,12 +48,12 @@ header {
 
 .titulo-principal {
     font-size: 24px;
-    color: #0000EE;
+    color: var(--cornflower-color);
     font-weight: 400;
 }
 
 .label-pesquisa {
-    background-color: #DB1E8C;
+    background-color: var(--cerise-color);
     height: 40px;
     padding: 8px;
     display: flex;
@@ -52,5 +69,176 @@ header {
 }
 
 ::placeholder {
-    color: #FF97D3;
+    color: var(--carnation-color);
 }
+
+
+/*---- Main ----*/
+
+
+
+/*Main*/
+
+.container-principal {
+    width: 100%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 1.25rem;
+}
+
+
+/* Cards */
+.container {
+    width: 30%;
+    max-width: 400px;
+
+    height: 480px;
+
+    padding: 1rem 1.5rem;
+
+    margin: 1rem 2.5rem 1rem 2.5rem;
+
+
+    background-color: var(--white-color);
+    border-radius: 1%;
+
+
+    box-sizing: border-box;
+
+}
+
+.trilha-lista {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+}
+
+.trilha-titulo {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: var(--pickled-bluewood-color);
+
+    margin-top: 0.75rem;
+    margin-left: 0.5rem;
+}
+
+
+/* Texto */
+.trilha-conteudo {
+    margin-top: 24px;
+    margin-left: 0.5rem;
+
+
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+
+    margin-bottom: 1.75rem;
+
+}
+
+
+/* Botao */
+.trilha-botao {
+    display: block;
+
+    text-align: center;
+
+    box-sizing: border-box;
+
+    width: 100%;
+    max-width: 150px;
+    
+    padding: 0.75rem 1rem;
+
+    border: 1px solid var(--cornflower-color);
+    border-radius: 5px;
+    
+    font-size: 0.9rem;
+    font-weight: 400;
+
+
+    color: var(--cornflower-color);
+
+}
+
+
+.fullstack {
+    margin-top: 10.5rem;
+}
+
+.ux {
+    margin-top: 9.25rem;
+}
+
+.segurancadainfo {
+    margin-bottom: 6rem;
+}
+
+.dados {
+    margin-top: 7.5rem;
+}
+
+.devops {
+    margin-top: 4.5rem;
+}
+
+.ecommerce {
+    margin-top: 3.25rem;
+}
+
+/*--Footer--*/
+
+
+footer {
+
+    display: flex;
+    background-color: var(--white-color);
+    margin-top: 140px;
+
+    
+}
+
+.rodape {
+    width: 100%;
+
+    height: 140px;
+
+    margin: 0 auto;
+
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.rodape-logos {
+
+    margin: 1rem 1.5rem 2rem 1rem;
+    margin-left: 2rem;
+    margin-right: 100px;
+}
+
+
+
+.icons {
+    display: flex;
+    flex-flow: row nowrap;
+
+    margin: 15px;
+}
+
+.rodape-social {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+
+}
+
